@@ -32,9 +32,12 @@ if (File.Exists(csvPath))
         {
             Console.WriteLine("Errore nell'inserimento dell'indirizzo: " + e.Message);
         }
-            
+
     }
     reader.Close();
+}
+else {
+    Console.WriteLine("L'indirizzo del file non e' corretto o non esiste");
 }
 
 //return;
